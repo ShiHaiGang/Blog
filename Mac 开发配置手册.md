@@ -203,7 +203,7 @@
   All done! 
   Apple:~ shihaigang$
 
-
+  # 开启数据库
   brew services start mysql
   brew services stop mysql
   mysql.server start
