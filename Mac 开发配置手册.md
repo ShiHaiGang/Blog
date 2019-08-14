@@ -1,3 +1,69 @@
+# Dracula 黑暗主题
+  > https://draculatheme.com/
+
+# Oh My ZSH 官网
+  > https://ohmyz.sh/
+  
+  默认主题库
+  > https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
+
+  外部主题库
+  > https://github.com/robbyrussell/oh-my-zsh/wiki/External-themes
+
+  ```bash
+  # Via curl （安装方法一）
+  $ sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+  
+  # Via wget （安装方法二）
+  $ sh -c "$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
+
+  # 卸载
+  uninstall_oh_my_zsh
+  ```
+
+# Homebrew 官网
+  > https://brew.sh/
+
+  ```bash
+  # 安装 Homebrew
+  /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+  # 卸载 Homebrew
+  /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/uninstall)"
+  ```
+
+# Homebrew 常用命令
+```bash
+brew search mysql #搜索指定软件
+
+brew info mysql #查看软件的信息，比如目前的版本，依赖，安装后注意事项等
+
+brew update #这会更新 Homebrew 自己，并且使得接下来的两个操作有意义——
+
+brew outdated #检查过时（是否有新版本）这会列出所有安装的软件里可以升级的那些
+
+brew upgrade #升级所有可以升级的软件们
+
+brew cleanup #清理不需要的版本极其安装包缓存
+
+brew outdated # 看一下哪些软件可以升级
+
+brew upgrade <xxx> # 升级指定的：如果不是所有的都要升级，那就这样升级指定的
+ 
+brew upgrade; brew cleanup #升级并清理：如果都要升级，直接升级完然后清理干净
+```
+# brew install git
+  > git --version 
+
+# brew install node
+  > node -v
+
+# brew install redis
+  > brew services start redis
+  > brew services stop redis
+  > redis-server
+
+# brew install mysql
 ```bash
 // 安装 mysql
 Apple:~ shihaigang$ brew install mysql
@@ -83,3 +149,15 @@ Success.
 All done! 
 Apple:~ shihaigang$
 ```
+  > brew services start mysql
+  > brew services stop mysql
+  > mysql.server start
+  > mysql.server stop
+
+# brew install mongodb
+  > brew services start mongodb
+  > brew services stop mongodb
+  > mongod
+
+# 参考资料
+  > http://wiki.jikexueyuan.com/project/mac-dev-setup/iterm.html
