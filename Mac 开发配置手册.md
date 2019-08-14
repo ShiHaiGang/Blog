@@ -56,6 +56,54 @@
   ```
   git --version 
   ```
+  ### 配置 Git
+    > https://git-scm.com/book/zh/v1/%E8%87%AA%E5%AE%9A%E4%B9%89-Git-%E9%85%8D%E7%BD%AE-Git
+      如第一章所言，用git config配置 Git，要做的第一件事就是设置名字和邮箱地址：
+    
+    ```
+    $ git config --global user.name "John Doe"
+    $ git config --global user.email johndoe@example.com
+    ```
+  ### (1）首先检查电脑是否曾经生成过秘钥
+  ```
+  cd ~/.ssh
+  ```
+  若打开该文件夹为空，则表示没有生成过秘钥，进入第二步。（~表示根目录）
+  
+  ### (2) 生成秘钥 SSH key
+    ```bash
+    $ ssh-keygen -t rsa -C "your_email@example.com"
+    ```
+    ```bash
+    MacBook-Pro:~ shihaigang$ ssh-keygen -t rsa -C "johndoe@example.com"
+    Generating public/private rsa key pair.
+    Enter file in which to save the key (/Users/shihaigang/.ssh/id_rsa): //回车设置秘密
+    Enter passphrase (empty for no passphrase): //回车 不设密码
+    Enter same passphrase again: //回车 不设密码
+    Your identification has been saved in /Users/shihaigang/.ssh/id_rsa.
+    Your public key has been saved in /Users/shihaigang/.ssh/id_rsa.pub.
+    The key fingerprint is:
+    SHA256:vaGc5vfdL5ACSXQCbaq7Bvl2Xjwsx7xdV1tB5Eg0rUs johndoe@example.com
+    The key's randomart image is:
+    +---[RSA 2048]----+
+    |      .+o . .+oo |
+    |        +o  . =. |
+    |       + .   ..o |
+    |      . o.   E  .|
+    |   . .  S.o ... o|
+    |  o .  * o.oo. .o|
+    |   o .. & ...... |
+    |    = .* +.. o.. |
+    |   o.+. o.... ..+|
+    +----[SHA256]-----+
+    MacBook-Pro:~ shihaigang$ 
+    ```
+    执行成功后，会在主目录.ssh路径下生成两个文件：
+      id_rsa 私钥文件；
+      id_rsa.pub 公钥文件；
+  ### 配置 GitHub (SSH keys)
+    Title 随意
+    Key 为 id_rsa.pub 中的内容（全部复制，可用“cat id_rsa.pub”命令打开）
 
 # brew install node
   ```
