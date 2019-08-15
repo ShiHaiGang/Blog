@@ -36,7 +36,7 @@
   ### 推荐安装 🌟🌟🌟🌟🌟
   > 推荐大家按需添加多个字体文件或单个字体文件
   > [Mac 字体册偏好设置](https://support.apple.com/zh-cn/guide/font-book/fntbk1004/8.0/mac/10.13)
-  > [Meslo LG M DZ Regular for Powerline.ttf](https://github.com/powerline/fonts/tree/master/Meslo%20Dotted)
+  > [Meslo LG M Regular for Powerline.ttf](https://github.com/powerline/fonts/tree/master/Meslo%20Slashed)
 
   ### 默认安装
   > 华丽丽的主题需要 Powerline 字符集的支持。
