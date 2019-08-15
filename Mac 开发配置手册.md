@@ -1,7 +1,18 @@
-# Dracula 黑暗主题
+# iTerm2
+  ### 配置总览
+  - iTerm2 
+  > Terminal 终端的替代品，拥有更多强大的功能.
+  - Oh-My-Zsh
+  > 用来管理 zsh 的配置，同时还有很多社区贡献的主题配置以及好用的插件可供使用.
+  - Dracula 主题
+  > 暗黑系配色
+  - zsh 命令语法高亮;
+  > zsh：Linux 的一种 shell 外壳，强大的虚拟终端，和 bash 属于同类产品，OS X 已自带；
+
+### Dracula 黑暗主题
   > https://draculatheme.com/
 
-# Oh My ZSH 官网
+### Oh My ZSH 官网
   > https://ohmyz.sh/
   
   默认主题库
@@ -19,6 +30,38 @@
 
   # 卸载
   uninstall_oh_my_zsh
+  ```
+
+### Powerline fonts
+  ### 推荐安装 🌟🌟🌟🌟🌟
+  > 推荐大家按需添加多个字体文件或单个字体文件
+  > [Mac 字体册偏好设置](https://support.apple.com/zh-cn/guide/font-book/fntbk1004/8.0/mac/10.13)
+  > [Meslo LG M DZ Regular for Powerline.ttf](https://github.com/powerline/fonts/tree/master/Meslo%20Dotted)
+
+  ### 默认安装
+  > 华丽丽的主题需要 Powerline 字符集的支持。
+  ```bash
+  # clone
+  git clone https://github.com/powerline/fonts.git --depth=1
+  # install
+  cd fonts
+  ./install.sh
+  # clean-up a bit
+  cd ..
+  rm -rf fonts
+  ```
+  ### 卸载方式
+  ```bash
+    # 默认卸载（可能会失败）
+    ./uninstall.sh
+  ```
+  > ./uninstall.sh
+  > -bash: ./uninstall.sh: Permission denied
+  
+  ```bash
+    # 推荐卸载 🌟🌟🌟🌟🌟
+    sh ./uninstall.sh 
+    chmod +x uninstall.sh
   ```
 
 # Homebrew 官网
@@ -52,6 +95,7 @@
   
   brew upgrade; brew cleanup #升级并清理：如果都要升级，直接升级完然后清理干净
   ```
+
 # brew install git
   ```
   git --version 
