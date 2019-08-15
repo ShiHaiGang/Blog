@@ -1,8 +1,8 @@
 # iTerm2
   ### 配置总览
-  - iTerm2 
+  + iTerm2 
   > Terminal 终端的替代品，拥有更多强大的功能.
-  - Oh-My-Zsh
+  + Oh-My-Zsh
   > 用来管理 zsh 的配置，同时还有很多社区贡献的主题配置以及好用的插件可供使用.
   - Dracula 主题
   > 暗黑系配色
