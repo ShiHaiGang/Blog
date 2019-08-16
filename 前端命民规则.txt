@@ -1,0 +1,90 @@
+1. class 常用命名
+	标志：logo 
+	登陆：login 
+	搜索：search 
+	侧栏：sideBar 
+	广告：banner 
+	菜单：menu  
+	搜索：search 
+	滚动：scroll 
+	页面主体：main 
+	内容：content 
+	标签页：tab 
+	文章列表：list 
+	提示信息：msg 
+	小技巧：tips 
+	栏目标题：title 
+	加入：joinus 
+	指南：guild 
+	服务：service 
+	本地主机：localhost 
+	热点：hot 
+	新闻：news 
+	下载：download 
+	注册：register 
+	状态：status 
+	按钮：btn 
+	投票：vote 
+	合作伙伴：partner 
+	友情链接：friendLink 
+	版权：copyRight 
+	链接：link 
+	容器：container 
+	图标：icon 
+	信息：info
+	外套：wrap 
+
+	“搜索框”则应命名为“searchInput”、
+	“搜索图标”命名这 “searchIcon” 、
+	“搜索按钮”命名为 “searchBtn”
+
+
+HTML5 新增标签
+	header: 一个页面或一个区域的头部 
+	nav: 导航链接 
+	section: 一个区域 
+	artical: 一篇文章 
+	aside: 页面内容部分的侧边栏 
+	hgroup: 文件中一个区块的相关信息 
+	figure: 一组媒体内容以及它们的标题 
+	figcaption: 标签定义 figure 元素的标题。 
+	footer: 一个页面或一个区域的底部 
+	dialog: 一个对话框(会话框)类似微信
+
+多媒体 交互标签
+	<video> 标记定义一个视频
+	<audio> 标记定义音频内容
+	<source> 标记定义媒体资源
+	<canvas> 标记定义图片
+	<embed> 标记定义外部的可交互的内容或插件 比如flash
+
+# 你因该知道的几个开发规范
+
+javascript 命名规范:
+  1.私有的
+  2.局部的
+  3.常量
+  4.静态的
+  5.标签属性定义
+
+	```javascript
+	var _proto_; //私有变量
+	var obj={
+		_proto_:{} //私有属性
+	}
+	function(){
+		var local; //局部变量
+		let local; //局部变量
+		var LOCAL = 1; //局部常量
+		const LOCAL = 2; //局部常量
+		var obj={
+			ATTR:{} //属性常量
+		}
+	}
+	myFun.EVENT_TYPE = 1; //静态属性常量
+	var obj = {
+		DIR:{TOP:1,BOTTOM:2,LEFT:3} //枚举常量
+	}
+	// 标签属性定义
+	<div id='log' data-cc-name='edison log'>
+	```
