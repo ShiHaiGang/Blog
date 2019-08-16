@@ -1,6 +1,15 @@
 
-# Blog
-Personal Blog
+<p align="center" style="background-color: #0064cd;">
+  <img alt="" src="./xiaojiejie.png">
+</p>
+
+<p align="center">
+  Blog
+</p>
+
+<p align="center">
+  Personal Blog
+</p>
 
 ## A B C 端
  > A 端是开发界面。即管理员所接触的界面。
