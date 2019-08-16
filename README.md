@@ -1,6 +1,6 @@
 
-<p align="center" style="background-color: #0064cd;">
-  <img alt="" src="./xiaojiejie.png">
+<p align="center">
+  <!-- <img alt="" src="./xiaojiejie.png"> -->
 </p>
 
 <p align="center">
