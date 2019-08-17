@@ -42,7 +42,7 @@
 [『前端技术』相比后端是否只能打辅助?](https://juejin.im/post/5cf01c0251882503050edec9)
 
 
-
+```
 Nuxt
 ├─ nuxt.config.js
 ├─ package-lock.json
@@ -70,3 +70,4 @@ Nuxt
 │    └─ favicon.ico
 └─ store
        └─ README.md
+```
