@@ -18,6 +18,22 @@
 
  > C 端是用户界面。即app的界面，用户所接触最为广泛的界面。
 
+# 目录结构
+  .
+  +-- pages
+  +-- server
+  |   +-- routes
+  |     +-- api
+  |       +-- users.js
+  |     +-- index.js
+  |   +-- dbs
+  +-- api
+  |   +-- routes
+  |     +-- users.js
+  |   +-- index.js
+  +-- store
+
+
 ## Tencent Cloud Base
 ![腾讯云基地](https://github.com/TencentCloudBase)
 
