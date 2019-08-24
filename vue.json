@@ -1,0 +1,52 @@
+{
+	// Place your snippets for vue here. Each snippet is defined under a snippet name and has a prefix, body and 
+	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
+	// same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+
+	// New Vue File
+	"Vue.js": {
+		"prefix": "vue",
+		"body": [
+			"<!-- HTML -->",
+			"<template>",
+			"	<div>",
+			"		/*content$1*/",
+			"	</div>",
+			"</template>",
+			"",
+			"<!-- JS -->",
+			"<script type='text/javascript'>",
+			"//import index from '@/index';",
+			"",
+			"export default {",
+			"	data () {",
+			"		return {};",
+			"	},",
+			"	props: [],",
+			"	watch: {},",
+			"	methods: {},",
+			"	computed: {},",
+			"	mounted () {},",
+			"	components: {},",
+			"}",
+			"</script>",
+			"",
+			"<!-- SCSS -->",
+			"<style lang='scss' scoped>",
+			"//@import 'src/style/mixin.scss';",
+			"",
+			"</style>"
+		],
+		"description": "Vue <template>, <script> and <style>"
+	}
+}
