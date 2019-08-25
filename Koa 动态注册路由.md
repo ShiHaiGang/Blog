@@ -1,7 +1,7 @@
 # 方法一
   > 原文链接：https://blog.csdn.net/adley_app/article/details/94549366
 
-* + app.js
+* app.js
   ```javascript
   const Koa = require('koa');
   const app = new Koa();
@@ -11,7 +11,7 @@
   app.listen(9092);
   ```
 
-* + routes/index.js
+* routes/index.js
   ```javascript
   const Router = require('koa-router');
   const router = new Router();
@@ -34,7 +34,7 @@
   module.exports = router;
   ```
 
-* + routes/login.js
+* routes/login.js
   ```javascript
   const Router = require('koa-router');
   const router = new Router();
@@ -56,7 +56,7 @@
 # 方法二
   > 原文链接：https://1peng.github.io/2017/09/28/Vue2+koa2+nuxt+ssr%E9%A1%B9%E7%9B%AE%E5%88%9D%E6%9E%84
 
-* + 创建server/autoRoutes.js，大致意思自己意会吧，相信大家都能看懂。
+* 创建server/autoRoutes.js，大致意思自己意会吧，相信大家都能看懂。
   ```javascript
   /**
    * Created by wangyipeng on 2017/9/26.
@@ -82,14 +82,14 @@
   module.exports = exports
   ```
 
-* + 在server/index.js里添加
+* 在server/index.js里添加
   ```javascript
   import AutoRoutes from './autoRoutes' //这个放在最前边，不多解释了
   AutoRoutes.auto(app) //这个放在原有的app.use前边就行了
   ```
 
-* + 创建在server/controllers文件夹
-* + 写一个测试控制器server/controllers/user.js
+* 创建在server/controllers文件夹
+* 写一个测试控制器server/controllers/user.js
   ```javascript
   /**
    * Created by wangyipeng on 2017/9/27.
@@ -111,7 +111,7 @@
 # 方法三
   > 廖雪峰：https://www.liaoxuefeng.com/wiki/1022910821149312/1099849448318080
 
-  * + 我们先在controllers目录下编写index.js：
+  * 我们先在controllers目录下编写index.js：
   ```javascript
   var fn_index = async (ctx, next) => {
       ctx.response.body = `index`;
@@ -127,8 +127,8 @@
   };
   ```
 
-  * + 这个index.js通过module.exports把两个URL处理函数暴露出来。
-  * + 类似的，hello.js把一个URL处理函数暴露出来：
+  * 这个index.js通过module.exports把两个URL处理函数暴露出来。
+  * 类似的，hello.js把一个URL处理函数暴露出来：
   ```javascript
 
   var fn_hello = async (ctx, next) => {
@@ -141,7 +141,7 @@
   };
   ```
 
-  * + 现在，我们修改app.js，让它自动扫描controllers目录，找到所有js文件，导入，然后注册每个URL：
+  * 现在，我们修改app.js，让它自动扫描controllers目录，找到所有js文件，导入，然后注册每个URL：
   ```javascript
   // 先导入fs模块，然后用readdirSync列出文件
   // 这里可以用sync是因为启动时只运行一次，不存在性能问题:
