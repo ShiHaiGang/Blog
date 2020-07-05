@@ -1,0 +1,26 @@
+{
+    "update.mode": "none",
+    "workbench.iconTheme": "vscode-icons",
+    "editor.tabSize": 2,
+    "terminal.integrated.fontFamily": "Meslo LG M for Powerline",
+    "git.enableSmartCommit": true,
+    "eslint.options": {
+        "configFile": ".eslintrc.js"
+    },
+    "eslint.alwaysShowStatus": true,
+    "eslint.autoFixOnSave": true,
+    "eslint.enable": true,
+    "eslint.validate": [
+        "javascript",
+        "javascriptreact",
+        {
+            "language": "html",
+            "autoFix": true
+        },
+        {
+            "language": "vue",
+            "autoFix": true
+        }
+    ],
+    "gitlens.views.repositories.files.layout": "tree"
+}
