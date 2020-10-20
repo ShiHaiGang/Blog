@@ -186,9 +186,11 @@ rm -rf TM*
     Title 随意
     Key 为 id_rsa.pub 中的内容（全部复制，可用“cat id_rsa.pub”命令打开）
 
-# brew install node
+# brew install nvm
   ```
-  node -v
+  nvm -v
+  
+  nvm install node
   ```
 
 # brew install redis
